@@ -1,4 +1,4 @@
-package q별짓기2;
+package q별찍기3;
 
 import java.util.Scanner;
 
@@ -9,16 +9,14 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
 		sc.close();
-
-		for (int i = 0; i < x; i++) {
-			for (int j = 0; j < x - i - 1; j++) {
-				System.out.print("?");
-			}
-			for (int j = 0; j <= i; j++) {
+		
+		for ( int i = 0; i < x; i++) {
+			for(int j = x; j > i; j--) {
 				System.out.print("*");
 			}
-			System.out.println();
+			System.out.println("");
 		}
 
 	}
+
 }
