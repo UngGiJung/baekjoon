@@ -11,13 +11,15 @@ public class Main {
 		sc.close();
 
 		for (int i = 0; i < x; i++) {
-			for (int j = x - 1; 0 < j; j--) {
+			for (int j = x - 1; i <= j; j--) {
 				System.out.print("?");
 			}
-			for (int j = 0; i <= j; j++) {
+			for (int j = x; x <= j ; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
+
 	}
+
 }
